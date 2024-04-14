@@ -1,20 +1,25 @@
-import React from "react";
+import React, { useRef } from "react";
 import Section from "./Section";
 import { curve, heroBackground, robot } from "../assets";
 import Button from "./Button";
 import { heroIcons } from "../constant";
-import { BackgroundCircles } from "./design/Header";
-
+import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
+import { ScrollParallax } from "react-just-parallax";
+import GeneratingText from "./GeneratingText";
+import Notification from "./Notification";
+import CompanyLogos from "./CompanyLogos";
 export default function Hero() {
+  const parallexRef = useRef();
+
   return (
     <Section
-      className={"pt-12 -mt-[5.25]"}
+      className={"pt-[12rem] -mt-[5.25]"}
       crosses
-      crossesOffset="lg:translate-y-[5.2rem]"
       customPaddings
+      crossesOffset="lg:translate-y-[5.2rem]"
       id="hero"
     >
-      <div className="container relative">
+      <div className="container relative" ref={parallexRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb:[6rem]">
           <h1 className="h1 mb-6">
             Explore the Possibilities of AI Chatting with
@@ -51,8 +56,32 @@ export default function Hero() {
                   height={490}
                   alt="AI"
                 />
+
+                <GeneratingText
+                  className={
+                    "absolute left-4 right-4 bottom-[1.2rem] md:left-1/2 md:right-auto md:botom-8  md:w-[31rem] md:-translate-x-1/2 "
+                  }
+                />
+
+                <ScrollParallax isAbsolutelyPositioned>
+                  <ul className="hidden absolute -left-[4.5rem] bottom-[7.5rem] backdrop-blur-border  px-1 py-1 bg-n-9/40 border border-n-1/20 rounded-2xl lg:flex ">
+                    {heroIcons.map((icon) => (
+                      <li className="p-5 ">
+                        <img src={icon} alt="icon" width={24} height={25} />
+                      </li>
+                    ))}
+                  </ul>
+                </ScrollParallax>
+
+                <ScrollParallax isAbsolutelyPositioned>
+                  <Notification
+                    className={`hidden absolute -right-20 bottom-[11rem] w-[18rem] xl:flex`}
+                  />
+                </ScrollParallax>
               </div>
             </div>
+
+            <Gradient />
           </div>
           <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
             <img
@@ -67,6 +96,8 @@ export default function Hero() {
           <BackgroundCircles />
         </div>
       </div>
+      <CompanyLogos className={`hidden relative z-10 my-10 lg:block`} />
+      <BottomLine />
     </Section>
   );
 }
