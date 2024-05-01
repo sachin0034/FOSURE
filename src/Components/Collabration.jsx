@@ -2,6 +2,7 @@ import React from "react";
 import Section from "./Section";
 import { collabApps, collabContent, collabText } from "../constant";
 import { brainwaveSymbol, check } from "../assets";
+// import { logo } from "../assets";
 import Button from "./Button";
 import { LeftCurve, RightCurve } from "./design/Collaboration";
 export default function Collabration() {
@@ -10,7 +11,7 @@ export default function Collabration() {
       <div className="container lg:flex">
         <div className="max-w-[25rem]">
           <h2 className="h2 mb-[4rem]">
-            AI Chat App for seamless collaboration
+          At Fosure, we’re driven by our passion for technology and innovation
           </h2>
           <ul className="block">
             {collabContent.map((item, i) => (
@@ -37,13 +38,13 @@ export default function Collabration() {
             <div className="flex w-60 m-auto aspect-square rounded-full border border-n-4">
               <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
                 <div className=" flex item-center justify-center w-full h-full bg-n-8 rounded-full">
-                  <img
+                  {/* <img
                     className="m-auto"
                     width={48}
                     height={48}
                     src={brainwaveSymbol}
                     alt="symbol"
-                  />
+                  /> */}
                 </div>
               </div>
             </div>

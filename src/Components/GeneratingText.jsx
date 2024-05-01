@@ -8,7 +8,7 @@ export default function GeneratingText({ className }) {
     ${className || ""}`}
     >
       <img className="w-5 h-5" src={loading} alt="loading" />
-      AI is generating
+      FOSURE IS BUILDING
     </div>
   );
 }

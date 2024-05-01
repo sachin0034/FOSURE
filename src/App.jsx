@@ -12,16 +12,15 @@ function App() {
   return (
     <>
       <div className="overflow-hidden ">
-        <Header />
+        {/* <Header /> */}
         <Hero />
         <Benifits />
         <Collabration />
         <Services />
-        <Pricing />
         <Roadmap />
-        <Footer />
+        {/* <Footer /> */}
       </div>
-      <ButtonGradient />
+      {/* <ButtonGradient /> */}
     </>
   );
 }

@@ -61,16 +61,16 @@ export default function Header() {
           <HamburgerMenu />
         </nav>
 
-        <a
+        {/* <a
           href="#signup"
           className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
         >
           New Account
-        </a>
-        <Button className="hidden lg:flex   ">SignUp</Button>
-        <Button onClick={toggleNavigation} className={"ml-auto px-3 lg:hidden"}>
+        </a> */}
+        {/* <Button className="hidden lg:flex   ">SignUp</Button> */}
+        {/* <Button onClick={toggleNavigation} className={"ml-auto px-3 lg:hidden"}>
           <Menu openNavigation={openNavigation} />
-        </Button>
+        </Button> */}
       </div>
     </div>
   );
