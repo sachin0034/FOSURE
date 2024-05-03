@@ -36,6 +36,8 @@ import {
 	yourlogo,
 } from "../assets";
 
+
+
 export const navigation = [
 	{
 		id: "0",
@@ -100,6 +102,7 @@ export const roadmap = [
 		status: "done",
 		imageUrl: roadmap1,
 		colorful: true,
+		
 	},
 	{
 		id: "1",
@@ -108,6 +111,7 @@ export const roadmap = [
 		// date: "May 2023",
 		status: "done",
 		imageUrl: roadmap2,
+		link : "https://blog-dashboard-seven.vercel.app/posts"
 	},
 	{
 		id: "2",
@@ -116,6 +120,7 @@ export const roadmap = [
 		date: "May 2023",
 		status: "done",
 		imageUrl: roadmap3,
+		link : "https://virtual-avatar-bot.vercel.app"
 	},
 	{
 		id: "3",
@@ -124,6 +129,7 @@ export const roadmap = [
 		date: "May 2023",
 		status: "progress",
 		imageUrl: roadmap4,
+		link : "https://sachin089.github.io/Mockopedia"
 	},
 ];
 

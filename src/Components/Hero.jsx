@@ -39,7 +39,7 @@ export default function Hero() {
 					Experience Game-Changing Solutions. Fosure's Expertise Transforms Your Business.
 					</p>
 
-					<Button white>Contact Us</Button>
+					<Button white><a href="mailto:choudhardiv@gmail.com">Contact Us</a></Button>
 				</div>
 
 				<div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
